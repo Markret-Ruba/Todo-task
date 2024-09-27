@@ -1,0 +1,134 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.todo-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-head h3 {
+  font-size: 24px;
+  color: #13AD89;
+  margin-bottom: 20px;
+}
+
+.todo-add {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.todo-add input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #13AD89;
+  border-radius: 5px;
+}
+
+.todo-add-btn {
+  background-color: #13AD89;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.filter-box span {
+  font-size: 18px;
+}
+
+#todo-filter {
+  background-color: #FF7E80;
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 15px; /* Space between items */
+  justify-content: center; /* Center items horizontally */
+  font-size: 1.1rem;
+}
+
+.todo-card {
+  flex: 1 0 300px;
+  max-width: 300px;
+  background: #CCF5D3;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.card--name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card--description {
+  margin: 10px 0;
+}
+
+.card-status {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.card-status.completed {
+  background-color: #13AD89;
+}
+
+.card-status.notCompleted {
+  background-color: #FF7E80;
+}
+
+.todo--button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.todo--button-group button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.todo--card-edit {
+  background-color: #13AD89;
+}
+
+.todo--card-delete {
+  background-color: #D05E1F;
+}
+
+@media screen and (max-width: 700px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
